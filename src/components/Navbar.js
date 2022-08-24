@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import logo from '../img/ontario-logo--desktop.svg'
 
-function Narbar() {
-    const imgSrc = {
-        logo: "../img/ontario-logo--desktop.svg"
-    }
+function Navbar() {
 
     const [click, setClick] = useState(false)
     const handleClick = () => {
@@ -21,11 +19,11 @@ function Narbar() {
                             <div className="ontario-row">
                                 <div className="ontario-columns ontario-small-6 ontario-application-header__logo">
                                     <a href="https://www.ontario.ca/page/government-ontario">
-                                        <img src={imgSrc.logo} alt="Government of Ontario" />
+                                        <img src={logo} alt="Government of Ontario" />
                                     </a>
                                 </div>
                                 <div className="ontario-columns ontario-small-6 ontario-application-header__lang-toggle">
-                                    <a href="#" className="ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline">
+                                    <a href="/" className="ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline">
                                         <abbr title="Français" className="ontario-show-for-small-only">
                                             FR
                                         </abbr>
@@ -46,13 +44,9 @@ function Narbar() {
 
                                         <div className="ontario-application-subheader__menu-container">
                                             <ul className="ontario-application-subheader__menu ontario-show-for-large">
-                                                <li><Link to="/">Link 1</Link></li>
-                                                <li><Link to="/">Link 2</Link></li>
-                                                <li><Link to="/">Link 3</Link></li>
-                                            </ul>
-                                            <ul className="ontario-application-subheader__menu ontario-hide-for-small ontario-show-for-medium ontario-hide-for-large">
-                                                <li><Link to="/">Link 1</Link></li>
-                                                <li><Link to="/">Link 2</Link></li>
+                                                <li><Link to="/checklist">Check List</Link></li>
+                                                <li><Link to="/bootcamp">Sprint Bootcamp</Link></li>
+                                                <li><Link to="/stories">Stories</Link></li>
                                             </ul>
 
                                             <div className='menu-icon' onClick={handleClick}>
@@ -62,13 +56,7 @@ function Narbar() {
                                     </div>
                                 </div>
                             </section>
-                            <nav className="ontario-navigation" id="ontario-navigation">
-                                <button className="ontario-header__menu-toggler ontario-header-button ontario-header-button--with-outline" id="ontario-header-nav-toggler" aria-controls="ontario-navigation" aria-label="close">
-                                    {/* <svg className="ontario-icon" focusable="false" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
-                                        <use xlink:href="#ontario-icon-close"></use>
-                                    </svg> */}
-                                    <span>Menu</span>
-                                </button>
+                            {/* <nav className="ontario-navigation" id="ontario-navigation">
                                 <div className="ontario-navigation__container">
                                     <ul>
                                         <li className="ontario-show-for-small-only"><a href="#">Link
@@ -86,7 +74,7 @@ function Narbar() {
                                         <li><a href="#">Link 8</a></li>
                                     </ul>
                                 </div>
-                            </nav>
+                            </nav> */}
                         </div>
                     </div>
                     <div className="ontario-overlay"></div>
@@ -96,4 +84,4 @@ function Narbar() {
     )
 }
 
-export default Narbar
+export default Navbar

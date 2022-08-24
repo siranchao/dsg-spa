@@ -1,1 +1,6 @@
 @import "ontario-design-system/styles/ds-theme.css";
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
