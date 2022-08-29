@@ -1,0 +1,11 @@
+@import "../ontario-design-system/styles/ds-theme.css";
+
+.App {
+    background-color: #fff;
+}
+
+/* Navbar */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
