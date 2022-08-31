@@ -9,3 +9,19 @@
     display: none;
     cursor: pointer;
 }
+
+
+
+
+@media only screen and (max-width: 1167px) {
+    .menu-icon {
+        display: block;
+        color: #fff;
+        margin-right: .6rem;
+    }
+
+    .menu-icon svg {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
