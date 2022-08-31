@@ -4,15 +4,19 @@
     background-color: #fff;
 }
 
-/* Navbar */
+.ontario-footer {}
+
+/* By default view */
 .menu-icon {
     display: none;
     cursor: pointer;
 }
 
+.navbar2 {
+    display: none;
+}
 
-
-
+/* Responsive Nav-bar */
 @media only screen and (max-width: 1167px) {
     .menu-icon {
         display: block;
@@ -23,5 +27,23 @@
     .menu-icon svg {
         width: 1.6rem;
         height: 1.6rem;
+    }
+}
+
+/* For tablet view */
+/* @media only screen and (max-width: 1024px) {} */
+
+/* For mobile view */
+@media only screen and (max-width: 768px) {
+    .ontario-footer {
+        display: none;
+    }
+
+    .navbar2 {
+        display: block;
+    }
+
+    .history-container {
+        margin-bottom: 4rem;
     }
 }

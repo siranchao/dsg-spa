@@ -1,0 +1,23 @@
+.bottom-nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E8E8E8;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #D1D1D1;
+}
+
+.bottom-nav section {
+    flex: 1;
+    margin: 0 auto;
+}
+
+.bottom-nav-link {
+    text-align: center;
+    margin: 0;
+    font-size: .8rem;
+    font-weight: 500;
+}

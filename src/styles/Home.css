@@ -24,7 +24,7 @@
 /* Banner image */
 .banner-img {
     max-width: 100vw;
-    padding: 5rem;
+    padding: 2rem;
     background-color: #F2F2F2;
 }
 
@@ -117,10 +117,6 @@
 
 /* For tablet view */
 @media only screen and (max-width: 1024px) {
-    .banner-img {
-        padding: 4rem 2rem;
-    }
-
     .title {
         font-size: 60px;
     }
@@ -140,10 +136,6 @@
 
 /* For mobile view */
 @media only screen and (max-width: 768px) {
-    .banner-img {
-        padding: 2rem 1rem;
-    }
-
     .title {
         font-size: 50px;
         margin-bottom: 1rem;
