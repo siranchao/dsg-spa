@@ -13,6 +13,7 @@
 .bottom-nav section {
     flex: 1;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .bottom-nav-link {
@@ -20,4 +21,13 @@
     margin: 0;
     font-size: .8rem;
     font-weight: 500;
+    color: #00478F;
+}
+
+.bottom-nav-icon svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
 }
