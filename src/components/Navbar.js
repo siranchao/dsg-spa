@@ -24,12 +24,6 @@ function Navbar() {
                                 </div>
                                 <div className="ontario-columns ontario-small-6 ontario-application-header__lang-toggle">
                                     <a href="/" className="ontario-header__language-toggler ontario-header-button ontario-header-button--without-outline">
-                                        {/* <abbr title="Français" className="ontario-show-for-small-only">
-                                            FR
-                                        </abbr>
-                                        <span className="ontario-show-for-medium">
-                                            Français
-                                        </span> */}
                                         <abbr className="ontario-show-for-small-only">
                                             Login
                                         </abbr>
