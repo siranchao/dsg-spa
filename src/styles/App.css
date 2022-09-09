@@ -4,6 +4,10 @@
     background-color: #fff;
 }
 
+.container {
+    padding: 0;
+}
+
 /* By default view */
 .menu-icon {
     display: none;

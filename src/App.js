@@ -1,8 +1,13 @@
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Home from './components/Home'
 import Navbar2 from './components/Navbar2'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Checklist from './pages/Checklist'
+import Guide from './pages/Guide'
+import Tools from './pages/Tools'
+import NotFound from './pages/NotFound'
+import { Route, Routes } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.css'
 import './styles/App.css';
 import './styles/Home.css';
 import './styles/Navbar2.css'
@@ -10,30 +15,35 @@ import './styles/Navbar2.css'
 function App() {
 
   return (
-    <Router>
-      <div className='App'>
-        <Navbar />
+    <div className='App'>
+      <Navbar />
 
-        <Home />
+      <div className='container'>
+        <Routes>
+          <Route path='/' element={<Home />}>
+          </Route>
 
-        {/* <div className='container'>
-          <Routes>
-            <Route path='/'>
-            </Route>
+          <Route path='/checkList' element={<Checklist />}>
+          </Route>
 
-            <Route path='/about'>
-            </Route>
+          <Route path='/guide' element={<Guide />}>
+          </Route>
 
-          </Routes>
-        </div> */}
-        <Footer />
+          <Route path='/tools' element={<Tools />}>
+          </Route>
 
-        <div className='navbar2'>
-          <Navbar2 />
-        </div>
-
+          <Route path='*' element={<NotFound />}>
+          </Route>
+        </Routes>
       </div>
-    </Router>
+
+      <Footer />
+
+      <div className='navbar2'>
+        <Navbar2 />
+      </div>
+
+    </div>
   );
 }
 

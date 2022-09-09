@@ -44,9 +44,9 @@ function Navbar() {
 
                                         <div className="ontario-application-subheader__menu-container">
                                             <ul className="ontario-application-subheader__menu ontario-show-for-large">
-                                                <li><Link to="/checklist">Check List</Link></li>
-                                                <li><Link to="/bootcamp">Sprint Bootcamp</Link></li>
-                                                <li><Link to="/stories">Stories</Link></li>
+                                                <li><Link to="/checkList">Check List</Link></li>
+                                                <li><Link to="/guide">Sprint Bootcamp</Link></li>
+                                                <li><Link to="/tools">Sprint Tools</Link></li>
                                             </ul>
 
                                             <div className='menu-icon' onClick={handleClick}>

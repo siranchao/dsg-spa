@@ -1,6 +1,7 @@
 import React from 'react'
 import banner from '../img/sprint-overview.png'
 import useFetch from '../useFetch'
+import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 function Home() {
@@ -8,8 +9,6 @@ function Home() {
 
     return (
         <>
-            {isPending && <div>Is Loading...</div>}
-
             <div className='banner-img'>
                 <img src={banner} alt="banner"
                     style={{
@@ -18,21 +17,23 @@ function Home() {
                     }} />
             </div>
 
+            {isPending && <div>Is Loading...</div>}
+
             <main className='home-container'>
                 <div className='banner-box'>
                     <h1 className='title'>Design Sprint Guide</h1>
                     <div className='entry-flex-box'>
                         <div className='entry-intro'>
                             <p className='text'>
-                                The idea of the Design Sprint is to build and test a prototype in just FIVE days. You'll take a small team, clear the schedule for a week, and rapidly progress from problem to tested solution using a proven <a href='/checkList'>step-by-step checklist</a>.
+                                The idea of the Design Sprint is to build and test a prototype in just FIVE days. You'll take a small team, clear the schedule for a week, and rapidly progress from problem to tested solution using a proven <Link to='/checkList'>step-by-step checklist</Link>.
                             </p>
                             <p className='text'>
                                 A Design Sprint is like fast-forwarding into the future, so you can see how customers react before you invest all the time and expense of creating your new product, service, marketing campaign... or whatever!
                             </p>
                         </div>
                         <div className='entry-btn-group'>
-                            <button className='ontario-button ontario-button--primary'>New Design Sprint</button>
-                            <button className='ontario-button ontario-button--secondary'>Continue My Sprint</button>
+                            <Link to='/checkList' className='ontario-button ontario-button--primary'>New Design Sprint</Link>
+                            <Link to='/guide' className='ontario-button ontario-button--secondary'>Continue My Sprint</Link>
                         </div>
                     </div>
 

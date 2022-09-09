@@ -23,7 +23,6 @@
 
 /* Banner image */
 .banner-img {
-    max-width: 100vw;
     padding: 2rem;
     background-color: #F2F2F2;
 }
@@ -31,8 +30,7 @@
 /* Home Page container */
 .home-container {
     margin: 0 auto;
-    max-width: 72rem;
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .entry-flex-box {
@@ -60,7 +58,7 @@
     align-items: center;
 }
 
-.entry-btn-group button {
+.entry-btn-group .ontario-button {
     margin: 1.5rem;
     width: 15rem;
 }
@@ -83,7 +81,8 @@
 .video-section>iframe {
     width: 560px;
     height: 315px;
-    padding: 1rem;
+    display: block;
+    margin: 0 auto;
 }
 
 .intro-section {
@@ -95,12 +94,11 @@
 /* History Section */
 .history-container {
     background-color: #F2F2F2;
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .history-box {
     margin: 0 auto;
-    max-width: 72rem;
     padding: 1rem;
 }
 
@@ -115,7 +113,7 @@
 }
 
 
-/* For tablet view */
+/* For laptop view */
 @media only screen and (max-width: 1024px) {
     .title {
         font-size: 60px;
@@ -134,8 +132,14 @@
     }
 }
 
-/* For mobile view */
+/* For tablet view */
 @media only screen and (max-width: 768px) {
+
+    .home-container,
+    .history-container {
+        padding: 1rem 1rem;
+    }
+
     .title {
         font-size: 50px;
         margin-bottom: 1rem;
@@ -150,10 +154,17 @@
     }
 
     .video-section>iframe {
-        width: 90vw;
+        width: 70vw;
     }
 
     .entry-flex-box {
         padding-bottom: 1rem;
+    }
+}
+
+/* For mobile view */
+@media only screen and (max-width: 576px) {
+    .video-section>iframe {
+        width: 90vw;
     }
 }
